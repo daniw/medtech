@@ -1,0 +1,145 @@
+\section{Laborversuch Blutzucker}
+
+\subsection{Daten}
+
+\subsubsection{Wasser}
+\begin{figure}[h!]
+    \centering
+        \begin{tikzpicture}
+            \begin{axis}[
+                title={Wasser},
+                xlabel={Zeit [min]},
+                ylabel={Blutzucker [mmol/l]},
+                width=1\textwidth,
+                xmin=-5,
+                xmax=35,
+                ymin=3,
+                ymax=9,
+                ytick={3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0,8.5,9.0}
+            ]
+                \addplot table [y=$W11$, x=t]{data/data_water.txt};
+                \addlegendentry{W 1a};
+                \addplot table [y=$W12$, x=t]{data/data_water.txt};
+                \addlegendentry{W 1b};
+                \addplot table [y=$W13$, x=t]{data/data_water.txt};
+                \addlegendentry{W 1c};
+                \addplot table [y=$W21$, x=t]{data/data_water.txt};
+                \addlegendentry{W 2a};
+                \addplot table [y=$W22$, x=t]{data/data_water.txt};
+                \addlegendentry{W 2b};
+                \addplot table [y=$W31$, x=t]{data/data_water.txt};
+                \addlegendentry{W 3a};
+                \addplot table [y=$W32$, x=t]{data/data_water.txt};
+                \addlegendentry{W 3b};
+                \addplot table [y=$W41$, x=t]{data/data_water.txt};
+                \addlegendentry{W 4a};
+            \end{axis}
+        \end{tikzpicture}
+\end{figure}
+\clearpage
+
+\subsubsection{Assugrin}
+\begin{figure}[h!]
+    \centering
+        \begin{tikzpicture}
+            \begin{axis}[
+                title={Assugrin},
+                xlabel={Zeit [min]},
+                ylabel={Blutzucker [mmol/l]},
+                width=1\textwidth,
+                xmin=-5,
+                xmax=35,
+                ymin=3,
+                ymax=9,
+                ytick={3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0,8.5,9.0}
+            ]
+                \addplot table [y=$A11$, x=t]{data/data_assugrin.txt};
+                \addlegendentry{A 1a};
+                \addplot table [y=$A12$, x=t]{data/data_assugrin.txt};
+                \addlegendentry{A 1b};
+                \addplot table [y=$A21$, x=t]{data/data_assugrin.txt};
+                \addlegendentry{A 2a};
+                \addplot table [y=$A22$, x=t]{data/data_assugrin.txt};
+                \addlegendentry{A 2b};
+                \addplot table [y=$A31$, x=t]{data/data_assugrin.txt};
+                \addlegendentry{A 3a};
+                \addplot table [y=$A32$, x=t]{data/data_assugrin.txt};
+                \addlegendentry{A 3b};
+                \addplot table [y=$A41$, x=t]{data/data_assugrin.txt};
+                \addlegendentry{A 4a};
+            \end{axis}
+        \end{tikzpicture}
+\end{figure}
+\clearpage
+
+\subsubsection{Zucker}
+\begin{figure}[h!]
+    \centering
+        \begin{tikzpicture}
+            \begin{axis}[
+                title={Zucker},
+                xlabel={Zeit [min]},
+                ylabel={Blutzucker [mmol/l]},
+                width=1\textwidth,
+                xmin=-5,
+                xmax=35,
+                ymin=3,
+                ymax=9,
+                ytick={3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0,8.5,9.0}
+            ]
+                \addplot table [y=$Z11$, x=t]{data/data_sugar.txt};
+                \addlegendentry{Z 1a};
+                \addplot table [y=$Z12$, x=t]{data/data_sugar.txt};
+                \addlegendentry{Z 1b};
+                \addplot table [y=$Z21$, x=t]{data/data_sugar.txt};
+                \addlegendentry{Z 2a};
+                \addplot table [y=$Z22$, x=t]{data/data_sugar.txt};
+                \addlegendentry{Z 2b};
+                \addplot table [y=$Z31$, x=t]{data/data_sugar.txt};
+                \addlegendentry{Z 3a};
+                \addplot table [y=$Z32$, x=t]{data/data_sugar.txt};
+                \addlegendentry{Z 3b};
+                \addplot table [y=$Z33$, x=t]{data/data_sugar.txt};
+                \addlegendentry{Z 3c};
+                \addplot table [y=$Z41$, x=t]{data/data_sugar.txt};
+                \addlegendentry{W 4a};
+            \end{axis}
+        \end{tikzpicture}
+\end{figure}
+\clearpage
+
+\subsubsection{Snickers}
+\begin{figure}[h!]
+    \centering
+        \begin{tikzpicture}
+            \begin{axis}[
+                title={Snickers},
+                xlabel={Zeit [min]},
+                ylabel={Blutzucker [mmol/l]},
+                width=1\textwidth,
+                xmin=-5,
+                xmax=35,
+                ymin=3,
+                ymax=9,
+                ytick={3.0,3.5,4.0,4.5,5.0,5.5,6.0,6.5,7.0,7.5,8.0,8.5,9.0}
+            ]
+                \addplot table [y=$S11$, x=t]{data/data_snickers.txt};
+                \addlegendentry{S 1a};
+                \addplot table [y=$S12$, x=t]{data/data_snickers.txt};
+                \addlegendentry{S 1b};
+                \addplot table [y=$S21$, x=t]{data/data_snickers.txt};
+                \addlegendentry{S 2a};
+                \addplot table [y=$S22$, x=t]{data/data_snickers.txt};
+                \addlegendentry{S 2b};
+                \addplot table [y=$S31$, x=t]{data/data_snickers.txt};
+                \addlegendentry{S 3a};
+                \addplot table [y=$S32$, x=t]{data/data_snickers.txt};
+                \addlegendentry{S 3b};
+                \addplot table [y=$S33$, x=t]{data/data_snickers.txt};
+                \addlegendentry{S 3c};
+                \addplot table [y=$S41$, x=t]{data/data_snickers.txt};
+                \addlegendentry{S 4a};
+            \end{axis}
+        \end{tikzpicture}
+\end{figure}
+
